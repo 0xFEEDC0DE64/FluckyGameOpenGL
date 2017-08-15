@@ -1,0 +1,10 @@
+TARGET = FluckyGameOpenGL
+TEMPLATE = app
+CONFIG -= qt
+DEFINES -= UNICODE QT_LARGEFILE_SUPPORT
+
+HEADERS +=
+
+SOURCES += main.cpp
+
+LIBS += -lstdc++ -lGL -lGLEW -lSDL2
