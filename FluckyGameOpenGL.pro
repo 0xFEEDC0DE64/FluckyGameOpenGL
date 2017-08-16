@@ -4,10 +4,12 @@ CONFIG -= qt
 DEFINES -= UNICODE QT_LARGEFILE_SUPPORT
 
 HEADERS += \
-    shader.h
+    shader.h \
+    vertex.h
 
 SOURCES += main.cpp \
-    shader.cpp
+    shader.cpp \
+    vertex.cpp
 
 LIBS += -lstdc++ -lGL -lGLEW -lSDL2
 
