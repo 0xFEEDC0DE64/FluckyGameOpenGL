@@ -5,9 +5,11 @@
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 
-const int width = 800;
-const int height = 600;
-const std::string title = "Flucky Game";
+#include "shader.h"
+
+static const int width = 800;
+static const int height = 600;
+static const std::string title = "Flucky Game";
 
 int main()
 {
@@ -23,6 +25,8 @@ int main()
         std::cerr << "Glew has some sort of problem!" << std::endl;
         return 1;
     }
+
+    Shader shader("../FluckyGameOpenGL/res/basicShader");
 
     while(true)
     {
